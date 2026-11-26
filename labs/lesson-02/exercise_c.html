@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Help Center</title></head>
+<body>
+  <h1>Student Help Center</h1>
+  <details open>
+    <summary>What is HTML?</summary>
+    <p>HTML describes the structure of a webpage.</p>
+  </details>
+  <details>
+    <summary>Do I need JavaScript for this FAQ?</summary>
+    <p>No. The browser handles this interaction.</p>
+  </details>
+  <details>
+    <summary>How do I submit my work?</summary>
+    <p>Follow the submission instructions provided by your instructor.</p>
+  </details>
+  <details>
+    <summary>Where can I practice?</summary>
+    <p>Practice by creating small pages and reviewing them in your browser.</p>
+  </details>
+
+  <button type="button" popovertarget="help">Show Help</button>
+  <div id="help" popover>
+    <p>Ask your instructor if you get stuck.</p>
+  </div>
+
+  <button type="button" popovertarget="resources">Show Resources</button>
+  <div id="resources" popover><p>Use MDN Web Docs as a reference for HTML.</p></div>
+
+  <button type="button" commandfor="info-dialog" command="show-modal">
+    Open Information
+  </button>
+  <dialog id="info-dialog">
+    <h2>Information</h2>
+    <p>Keep practicing HTML!</p>
+    <button type="button" commandfor="info-dialog" command="close">Close</button>
+  </dialog>
+</body>
+</html>

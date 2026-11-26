@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Interactive Student Portal</title></head>
+<body>
+<header><h1>Interactive Student Portal</h1></header>
+<main>
+<section aria-labelledby="registration-title"><h2 id="registration-title">Student Registration</h2>
+<form>
+<fieldset><legend>Personal Details</legend>
+<label for="portal-name">Name:</label><input id="portal-name" name="name" type="text" required autocomplete="name"><br>
+<label for="portal-email">Email:</label><input id="portal-email" name="email" type="email" required autocomplete="email"><br>
+<label for="portal-birthday">Birthday:</label><input id="portal-birthday" name="birthday" type="date"><br>
+<label for="portal-color">Favorite color:</label><input id="portal-color" name="color" type="color"><br>
+<label for="portal-skill">Skill level:</label><input id="portal-skill" name="skill" type="range" min="0" max="100" value="50"><br>
+<label for="portal-upload">Upload a file:</label><input id="portal-upload" name="upload" type="file">
+</fieldset>
+<fieldset><legend>Course Preferences</legend>
+<label for="portal-course">Choose or type a course:</label><input id="portal-course" name="course" list="portal-courses"><datalist id="portal-courses"><option value="HTML"><option value="CSS"><option value="JavaScript"><option value="Web Accessibility"><option value="Python"></datalist>
+</fieldset><button type="submit">Register</button></form></section>
+<section><h2>Learning Progress</h2><label for="portal-progress">Course completion:</label><progress id="portal-progress" value="45" max="100">45%</progress><br><label for="portal-meter">Storage used:</label><meter id="portal-meter" value="0.9" min="0" max="1" low="0.25" high="0.75" optimum="0.2">90%</meter></section>
+<section><h2>FAQ</h2><details open><summary>What is HTML?</summary><p>HTML describes the structure and meaning of webpage content.</p></details><details><summary>Do I need JavaScript for this portal?</summary><p>No. This exercise uses native HTML features only.</p></details><details><summary>How can I improve accessibility?</summary><p>Use labels, semantic elements, clear headings, and descriptive text.</p></details></section>
+<section><h2>Help</h2><button type="button" popovertarget="portal-help">Show Help</button><div id="portal-help" popover><p>Ask your instructor if you get stuck.</p><button type="button" popovertarget="portal-help" popovertargetaction="hide">Dismiss</button></div><button type="button" popovertarget="portal-resources">Show Resources</button><div id="portal-resources" popover><p>Consult MDN Web Docs for more information.</p></div></section>
+<section><h2>Information</h2><button type="button" commandfor="portal-dialog" command="show-modal">Open Information</button><dialog id="portal-dialog"><h3>Welcome</h3><p>Keep practicing and building your HTML skills!</p><button type="button" commandfor="portal-dialog" command="close">Close</button></dialog></section>
+<section><h2>About the Student</h2><p contenteditable="true" aria-label="Editable student bio">Click here to edit your bio.</p></section>
+</main><footer><p>HTML Lab 02</p></footer></body></html>
